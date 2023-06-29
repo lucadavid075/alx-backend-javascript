@@ -44,7 +44,7 @@ export default class Pricing {
    * returns the attributes in the following format 'amount currency_name (currency_code)'
    */
    displayFullPrice() {
-    return `${this._amount} ${this._currency.name} (${this.currency.code})`;
+    return `${this._amount} ${this._currency.name} (${this._currency.code})`;
   }
   
   /**
