@@ -1,15 +1,16 @@
+/**
+ * A Holberton Course class.
+ */
 export default class HolbertonCourse {
   /**
-   * Creates a new class.
-   *
    * @name - The name of number the course.
    * @length - How long the course is (in months).
    * @students - The names of students in the course.
    */
   constructor(name, length, students) {
-    this._name = name;
-    this._length = length;
-    this._students = students;
+    this.name = name;
+    this.length = length;
+    this.students = students;
   }
 
   /**

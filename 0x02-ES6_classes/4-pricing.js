@@ -5,14 +5,14 @@ export default class Pricing {
     this._amount = amount;
     this._currency = currency;
   }
-  
+
   /**
    * gets the amount
    */
   get amount() {
     return this._amount;
   }
-  
+
   /**
    * sets the amount
    */
@@ -39,14 +39,14 @@ export default class Pricing {
     }
     this._currency = value;
   }
-  
+
   /**
    * returns the attributes in the following format 'amount currency_name (currency_code)'
    */
-   displayFullPrice() {
+  displayFullPrice() {
     return `${this._amount} ${this._currency.name} (${this._currency.code})`;
   }
-  
+
   /**
    * static method
    * @amount - amount in number to be coverted
