@@ -3,7 +3,8 @@
  * @param {*} studentList
  * @param {*} city
  * @param {*} studentGrade
- * @returns an array of students for a specific city with their new grade
+ * @returns an array of students for a specific
+ * city with their new grade
  */
 
 const updateStudentGradeByCity = (studentList, city, studentGrade) => {
