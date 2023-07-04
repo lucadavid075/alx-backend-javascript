@@ -1,7 +1,15 @@
+/**
+ *
+ * @param {*} studentList
+ * @param {*} city
+ * @param {*} studentGrade
+ * @returns an array of students for a specific city with their new grade
+ */
+
 const updateStudentGradeByCity = (studentList, city, studentGrade) => {
-    if (!Array.isArray(studentList) || !Array.isArray(studentGrade)){
-        return []
-    }
+  if (!Array.isArray(studentList) || !Array.isArray(studentGrade)) {
+    return [];
+  }
   return studentList
     .filter((student) => student.location === city)
     .map((student) => {
@@ -13,6 +21,5 @@ const updateStudentGradeByCity = (studentList, city, studentGrade) => {
       };
     });
 };
-
 
 export default updateStudentGradeByCity;
