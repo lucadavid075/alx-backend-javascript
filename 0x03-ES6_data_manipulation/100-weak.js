@@ -1,5 +1,5 @@
 /**
- * weakMap - instance WeakMap of endpoints to track the number of calls made.
+ * weakMap - instance WeakMap (track the number of calls made)
  */
 export const weakMap = new WeakMap();
 
@@ -15,6 +15,7 @@ const MAX_ENDPOINT_CALLS = 5;
  * name: 'getUsers',
  * }} endpoint - endpoint to be queried
  */
+
 export function queryAPI(endpoint) {
   if (!weakMap.has(endpoint)) {
     weakMap.set(endpoint, 0);
