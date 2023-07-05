@@ -4,7 +4,10 @@
 export const weakMap = new WeakMap();
 /**
  *
- * @param {*} endpoint - accepts endpoint argument
+ * @param {{
+ * protocol: 'http',
+ * name: 'getUsers',
+ * }} endpoint - endpoint argument to be queried
  */
 
 export function queryAPI(endpoint) {
