@@ -1,6 +1,6 @@
 /**
  *
- * @param {* Array of any kind of element} arr
+ * @param {Array of any kind of element} arr
  * @returns a Set from arr
  */
 
