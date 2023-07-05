@@ -6,7 +6,7 @@
  */
 
 const cleanSet = (set, startString) => {
-  if (startString === '') {
+  if (!set || !startString || !(set instanceof Set) || typeof startString !== 'string') {
     return '';
   }
   const filteredValues = Array.from(set).filter((value) => value.startsWith(startString));
