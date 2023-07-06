@@ -19,16 +19,16 @@ export interface Teacher {
     return `${firstName[0]}. ${lastName}`;
   }
   
-  export interface IStudentClassConstructor {
-    new (firstName: string, lastName: string): IStudentClass;
+  export interface StudentClassConstructorInterface {
+    new (firstName: string, lastName: string): StudentClassInterface;
   }
   
-  export interface IStudentClass {
+  export interface StudentClassInterface {
     workOnHomework(): string;
     displayName(): string;
   }
   
-  export class StudentClass implements IStudentClass {
+  export class StudentClass implements StudentClassInterface {
     readonly _firstName!: string;
     readonly _lastName!: string;
   
@@ -46,6 +46,6 @@ export interface Teacher {
     }
   }
   
-  export function createStudent(ctor: IStudentClassConstructor, firstName: string, lastName: string): IStudentClass {
+  export function createStudent(ctor: StudentClassConstructorInterface, firstName: string, lastName: string): StudentClassInterface {
     return new ctor(firstName, lastName);
   }

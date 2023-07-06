@@ -1,10 +1,11 @@
 export interface MajorCredits {
-    credits: number & {__brand: 'MajorCredits'};
-  }
-  
-  export interface MinorCredits {
-    credits: number & {__brand: 'MinorCredits'};
-  }
+  _majorCreditBrand: void;
+  credits: number;
+}  
+export interface MinorCredits {
+  _minorCreditBrand: void;
+  credits: number;
+}
   
   export function sumMajorCredits(subject1: MajorCredits, subject2: MajorCredits): MajorCredits {
     const totalCredits: number = subject1.credits + subject2.credits;
